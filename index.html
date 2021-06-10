@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal JS</title>
+    <link rel="stylesheet" href="modal.css">
+    <script src="modal.js"></script>
+</head>
+<body>
+    
+    <button id="subscribe">Subscribe</button>
+
+    <div class="subscribe-wrapper">
+        <div class="subscribe-content">
+            <center>
+                <h1>Subscribe</h1>
+                <input type="email" placeholder="email@example.com" />
+                <button>Subscribe</button>
+            </center>
+        </div>
+    </div>
+
+    <button id="open">open</button>
+
+    <div class="wrapper">
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea et atque consectetur, minus eaque similique iste dignissimos libero asperiores ab assumenda nihil. Id vero quibusdam temporibus nemo quas quam corrupti in enim aut cum. Dolorum sint distinctio quis? Voluptatem, enim!
+        </div>
+    </div>
+
+    <script>
+        modal("#subscribe", ".subscribe-wrapper", ".subscribe-content", true);
+        modal("#open", ".wrapper", ".content", true)
+    </script>
+</body>
+</html>
